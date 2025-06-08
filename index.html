@@ -25,24 +25,39 @@
 
 
   <title>FRED: The Florence RGB-Event Drone Dataset</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
 
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <link href="./assets/css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/dropdown.css">
+  <link rel="stylesheet" href="./assets/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-slider.min.css">
+
+  <link rel="stylesheet" href="./assets/css/tab_gallery.css">
+  <!-- <link rel="stylesheet" href="./assets/css/fontawesome.all.min.css"> -->
+  <link rel="stylesheet" href="./assets/css/academicons.min.css">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="./assets/css/juxtapose.css">
+  <link rel="stylesheet" href="./assets/css/image_card_fader.css">
+  <link rel="stylesheet" href="./assets/css/image_card_slider.css">
+  <link rel="stylesheet" href="./assets/css/gallery.css">
+  <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Sofia ' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=VT323 ' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair Display ' rel='stylesheet'>
+
 </head>
 <body>
 
@@ -134,7 +149,7 @@
                   <a href="https://drive.google.com/drive/folders/1pISIErXOx76xmCqkwhS3-azWOMlTKZMp?usp=share_link" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="fas dataset"></i>
+                      <i class="far fa-images"></i>
                   </span>
                   <span>Dataset</span>
                 </a>
@@ -149,11 +164,9 @@
 </section>
 
 <section class="section hero is-light">
-  <div class="gallery">
-    <div class="image-row" style="display: flex; justify-content: center; align-items: center;">
+    <div class="image" style="display: flex; justify-content: center; align-items: center;">
       <img src="./static/images/teaser.png" alt="Fred Dataset Teaser Image" class="teaser-image">
     </div>
-  </div>
 </section>
 
 <!-- Paper abstract -->
@@ -220,6 +233,62 @@
   </div>
 </section>
 
+
+<section class="hero is-small" style="padding: 0">
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+      <!-- <h2 class="title is-3">BiomedJourney-Image-to-image Generation</h2> -->
+      <div class="has-text-justified">
+        <h2 class="title is-3 has-text-centered">Challenging Scenarios</h2>
+        <!-- <p>
+          todo
+        </p> -->
+        <br>
+      </div>
+      <!-- row 1 -->
+      <div class="columns is-centered">
+        <div class="column">
+
+          <div class="has-text-justified">
+            <p>
+              <span style="font-family:roboto; ">Raining</span>
+
+            </p>
+          </div>
+          <div class="content">
+            <div class="tab_container">
+              <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                <div class="jx-slider">
+                  <div class="jx-handle " style="left: 54.53%;">
+                    <div class="jx-arrow jx-left"></div>
+                    <div class="jx-control">
+                      <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0"
+                        aria-valuemax="100" aria-label="Image juxtapose slider"></div>
+                    </div>
+                    <div class="jx-arrow jx-right"></div>
+                  </div>
+                  <div class="jx-image jx-left " style="width: 54.53%;">
+                    <img src="./static/images/paired/rain_ev.jpeg" alt="" data-label="Raw-Image">
+                  </div>
+                  <div class="jx-image jx-right " style="width: 45.47%;">
+                    <img src="./static/images/paired/rain_ev.jpeg" alt="" data-label="BiomedParse">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+                
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
@@ -248,6 +317,20 @@
   </div>
 </footer>
 
+
+
+
+
+
+<script src="./assets/js/juxtapose.js"></script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script defer="" src="./assets/js/fontawesome.all.min.js"></script>
+<script src="./assets/js/bulma-carousel.min.js"></script>
+<script src="./assets/js/bulma-slider.min.js"></script>
+<script src="./assets/js/dropdown.js"></script>
+
 <!-- Statcounter tracking code -->
   
 <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
@@ -256,3 +339,5 @@
 
   </body>
   </html>
+
+
