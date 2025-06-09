@@ -196,16 +196,17 @@
   <div class="container">
     <div class="row align-items-center">
       <!-- Text block -->
-      <div class="text-section col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="padding: 5%;">
-        <h1 style="font-size: 2rem;">Spatio-Temporal Synchronization</h1>
-        <p>
+      <div class="text-section col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="flex: 1; min-width: 300px; padding: 2rem;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 1rem; color: #222;">Spatio-Temporal Synchronization</h1>
+        <p style="font-size: 1.2rem; color: #555; line-height: 1.6;">
           FRED dataset is spatio-temporally synchronized, meaning RGB and Event frames can be perfectly overlapped.
         </p>
       </div>
+      
 
       <!-- Video block -->
       <div class="video-section col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <video id="videoPlayer3" style="width: 100%; border-radius: 0px;" autoplay muted loop playsinline>
+        <video id="videoPlayer3" style="width: 100%; border-radius: 0px;" autoplay muted loop playsinline controls>
           <source src="./static/videos/slider.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
@@ -219,16 +220,16 @@
   <div class="container">
     <div class="row align-items-center">
       <!-- Text block -->
-      <div class="text-section col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="padding: 5%;">
-        <h1 style="font-size: 2rem;">Detection</h1>
-        <p>
+      <div class="text-section col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="flex: 1; min-width: 300px; padding: 2rem;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 1rem; color: #222;">Detection</h1>
+        <p style="font-size: 1.2rem; color: #555; line-height: 1.6;">
           FRED has detection annotations for 7+ hours of drone footage, with more than 700,000 annotated frames per each modality.
         </p>
       </div>
 
       <!-- Video block -->
       <div class="video-section col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <video id="videoPlayer3" style="width: 100%; border-radius: 0px;" autoplay muted loop playsinline>
+        <video id="videoPlayer3" style="width: 100%; border-radius: 0px;" autoplay muted loop playsinline controls>
           <source src="./static/videos/detection.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
@@ -242,16 +243,16 @@
   <div class="container">
     <div class="row align-items-center">
       <!-- Text block -->
-      <div class="text-section col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="padding: 5%;">
-        <h1 style="font-size: 2rem;">Tracking</h1>
-        <p>
-          FRED contains challenging tasks as tracking of multiple drones in a scene.
+      <div class="text-section col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="flex: 1; min-width: 300px; padding: 2rem;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 1rem; color: #222;">Tracking</h1>
+        <p style="font-size: 1.2rem; color: #555; line-height: 1.6;">
+          FRED presents challenging tasks such as tracking multiple drones within a scene.
         </p>
       </div>
 
       <!-- Video block -->
       <div class="video-section col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <video id="videoPlayer3" style="width: 100%; border-radius: 0px;" autoplay muted loop playsinline>
+        <video id="videoPlayer3" style="width: 100%; border-radius: 0px;" autoplay muted loop playsinline controls>
           <source src="./static/videos/tracking.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
@@ -265,16 +266,16 @@
   <div class="container">
     <div class="row align-items-center">
       <!-- Text block -->
-      <div class="text-section col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="padding: 5%;">
-        <h1 style="font-size: 2rem;">Forecasting</h1>
-        <p>
+      <div class="text-section col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6" style="flex: 1; min-width: 300px; padding: 2rem;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 1rem; color: #222;">Forecasting</h1>
+        <p style="font-size: 1.2rem; color: #555; line-height: 1.6;">
           Drone trajectory forecasting is also explored in FRED as a separate task, with a collection of complex drone motions given the multiple drone models and challenging scenarios.
         </p>
       </div>
 
       <!-- Video block -->
       <div class="video-section col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <video id="videoPlayer3" style="width: 100%; border-radius: 0px;" autoplay muted loop playsinline>
+        <video id="videoPlayer3" style="width: 100%; border-radius: 0px;" autoplay muted loop playsinline controls>
           <source src="./static/videos/forecast.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
@@ -299,8 +300,8 @@
       <div class="columns is-centered">
         <div class="column">
 
-          <div class="has-text-justified">
-            <h1 style="font-size: 1rem;">Raining</h1>
+          <div class="has-text-centered">
+            <h1 style="font-size: 2rem; margin-bottom: 1rem; color: #222;">Raining</h1>
           </div>
           <div class="content">
             <div class="tab_container">
@@ -314,11 +315,17 @@
                     </div>
                     <div class="jx-arrow jx-right"></div>
                   </div>
-                  <div class="jx-image jx-left " style="width: 54.53%;">
+                  <!-- <div class="jx-image jx-left " style="width: 54.53%;">
                     <img src="./static/images/paired/rain_ev.jpeg" alt="" data-label="Event Frame">
                   </div>
                   <div class="jx-image jx-right " style="width: 45.47%;">
                     <img src="./static/images/paired/rain_rgb.jpeg" alt="" data-label="RGB Frame">
+                  </div> -->
+                  <div class="jx-image jx-left" style="width: 54.53%;">
+                    <img src="./static/videos/webps/event_rain.webp" alt="Event Frame" class="lazy-gif" data-label="Event Frame">
+                  </div>
+                  <div class="jx-image jx-right" style="width: 45.47%;">
+                    <img src="./static/videos/webps/rgb_rain.webp" alt="RGB Frame" class="lazy-gif" data-label="RGB Frame">
                   </div>
                 </div>
               </div>
@@ -326,9 +333,9 @@
           </div>
 
 
-        
-          <div class="has-text-justified">
-            <h1 style="font-size: 1rem;">High dynamic ranges</h1>
+
+          <div class="has-text-centered">
+            <h1 style="font-size: 2rem; margin-bottom: 1rem; color: #222;">High dynamic ranges</h1>
           </div>
           <div class="content">
             <div class="tab_container">
@@ -342,11 +349,17 @@
                     </div>
                     <div class="jx-arrow jx-right"></div>
                   </div>
-                  <div class="jx-image jx-left " style="width: 54.53%;">
+                  <!-- <div class="jx-image jx-left " style="width: 54.53%;">
                     <img src="./static/images/paired/hdr_ev.jpeg" alt="" data-label="Event Frame">
                   </div>
                   <div class="jx-image jx-right " style="width: 45.47%;">
                     <img src="./static/images/paired/hdr_rgb.jpeg" alt="" data-label="RGB Frame">
+                  </div> -->
+                  <div class="jx-image jx-left" style="width: 54.53%;">
+                    <img src="./static/videos/event_hdr.gif" alt="Event Frame" class="lazy-gif" data-label="Event Frame">
+                  </div>
+                  <div class="jx-image jx-right" style="width: 45.47%;">
+                    <img src="./static/videos/rgb_hdr.gif" alt="RGB Frame" class="lazy-gif" data-label="RGB Frame">
                   </div>
                 </div>
               </div>
@@ -356,8 +369,8 @@
         </div>
         <div class="column">
 
-          <div class="has-text-justified">
-            <h1 style="font-size: 1rem;">Night</h1>
+          <div class="has-text-centered">
+            <h1 style="font-size: 2rem; margin-bottom: 1rem; color: #222;">Night</h1>
           </div>
           <div class="content">
             <div class="tab_container">
@@ -371,19 +384,25 @@
                     </div>
                     <div class="jx-arrow jx-right"></div>
                   </div>
-                  <div class="jx-image jx-left " style="width: 54.53%;">
+                  <!-- <div class="jx-image jx-left " style="width: 54.53%;">
                     <img src="./static/images/paired/night_ev.png" alt="" data-label="Event Frame">
                   </div>
                   <div class="jx-image jx-right " style="width: 45.47%;">
                     <img src="./static/images/paired/night_rgb.jpg" alt="" data-label="RGB Frame">
+                  </div> -->
+                  <div class="jx-image jx-left" style="width: 54.53%;">
+                    <img src="./static/videos/event_night.gif" alt="Event Frame"  class="lazy-gif" data-label="Event Frame">
+                  </div>
+                  <div class="jx-image jx-right" style="width: 45.47%;">
+                    <img src="./static/videos/rgb_night.gif" alt="RGB Frame"  class="lazy-gif" data-label="RGB Frame">
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="has-text-justified">
-            <h1 style="font-size: 1rem;">Indoor</h1>
+          <div class="has-text-centered">
+            <h1 style="font-size: 2rem; margin-bottom: 1rem; color: #222;">Indoor</h1>
           </div>
           <div class="content">
             <div class="tab_container">
@@ -397,11 +416,17 @@
                     </div>
                     <div class="jx-arrow jx-right"></div>
                   </div>
-                  <div class="jx-image jx-left " style="width: 54.53%;">
+                  <!-- <div class="jx-image jx-left " style="width: 54.53%;">
                     <img src="./static/images/paired/indoor_ev.png" alt="" data-label="Event Frame">
                   </div>
                   <div class="jx-image jx-right " style="width: 45.47%;">
                     <img src="./static/images/paired/indoor_rgb.jpg" alt="" data-label="RGB Frame">
+                  </div> -->
+                  <div class="jx-image jx-left" style="width: 54.53%;">
+                    <img src="./static/videos/event_indoor.gif" alt="Event Frame"  class="lazy-gif" data-label="Event Frame">
+                  </div>
+                  <div class="jx-image jx-right" style="width: 45.47%;">
+                    <img src="./static/videos/rgb_indoor.gif" alt="RGB Frame"  class="lazy-gif" data-label="RGB Frame">
                   </div>
                 </div>
               </div>
@@ -447,6 +472,35 @@
 
 
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const lazyGifs = document.querySelectorAll('img.lazy-gif');
+
+    if ('IntersectionObserver' in window) {
+      let gifObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            const gif = entry.target;
+            gif.src = gif.dataset.src;
+            gif.classList.remove("lazy-gif");
+            gifObserver.unobserve(gif);
+          }
+        });
+      }, {
+        rootMargin: "200px" // preloads when 200px before entering viewport
+      });
+
+      lazyGifs.forEach(function (gif) {
+        gifObserver.observe(gif);
+      });
+    } else {
+      // Fallback: Load all GIFs immediately if IntersectionObserver not supported
+      lazyGifs.forEach(function (gif) {
+        gif.src = gif.dataset.src;
+      });
+    }
+  });
+</script>
 
 
 
