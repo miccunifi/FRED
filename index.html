@@ -322,10 +322,10 @@
                     <img src="./static/images/paired/rain_rgb.jpeg" alt="" data-label="RGB Frame">
                   </div> -->
                   <div class="jx-image jx-left" style="width: 54.53%;">
-                    <img src="./static/videos/event_rain.gif" alt="Event Frame" data-label="Event Frame">
+                    <img src="./static/videos/event_rain.gif" alt="Event Frame" class="lazy-gif" data-label="Event Frame">
                   </div>
                   <div class="jx-image jx-right" style="width: 45.47%;">
-                    <img src="./static/videos/rgb_rain.gif" alt="RGB Frame" data-label="RGB Frame">
+                    <img src="./static/videos/rgb_rain.gif" alt="RGB Frame" class="lazy-gif" data-label="RGB Frame">
                   </div>
                 </div>
               </div>
@@ -356,10 +356,10 @@
                     <img src="./static/images/paired/hdr_rgb.jpeg" alt="" data-label="RGB Frame">
                   </div> -->
                   <div class="jx-image jx-left" style="width: 54.53%;">
-                    <img src="./static/videos/event_hdr.gif" alt="Event Frame" data-label="Event Frame">
+                    <img src="./static/videos/event_hdr.gif" alt="Event Frame" class="lazy-gif" data-label="Event Frame">
                   </div>
                   <div class="jx-image jx-right" style="width: 45.47%;">
-                    <img src="./static/videos/rgb_hdr.gif" alt="RGB Frame" data-label="RGB Frame">
+                    <img src="./static/videos/rgb_hdr.gif" alt="RGB Frame" class="lazy-gif" data-label="RGB Frame">
                   </div>
                 </div>
               </div>
@@ -391,10 +391,10 @@
                     <img src="./static/images/paired/night_rgb.jpg" alt="" data-label="RGB Frame">
                   </div> -->
                   <div class="jx-image jx-left" style="width: 54.53%;">
-                    <img src="./static/videos/event_night.gif" alt="Event Frame" data-label="Event Frame">
+                    <img src="./static/videos/event_night.gif" alt="Event Frame"  class="lazy-gif" data-label="Event Frame">
                   </div>
                   <div class="jx-image jx-right" style="width: 45.47%;">
-                    <img src="./static/videos/rgb_night.gif" alt="RGB Frame" data-label="RGB Frame">
+                    <img src="./static/videos/rgb_night.gif" alt="RGB Frame"  class="lazy-gif" data-label="RGB Frame">
                   </div>
                 </div>
               </div>
@@ -423,10 +423,10 @@
                     <img src="./static/images/paired/indoor_rgb.jpg" alt="" data-label="RGB Frame">
                   </div> -->
                   <div class="jx-image jx-left" style="width: 54.53%;">
-                    <img src="./static/videos/event_indoor.gif" alt="Event Frame" data-label="Event Frame">
+                    <img src="./static/videos/event_indoor.gif" alt="Event Frame"  class="lazy-gif" data-label="Event Frame">
                   </div>
                   <div class="jx-image jx-right" style="width: 45.47%;">
-                    <img src="./static/videos/rgb_indoor.gif" alt="RGB Frame" data-label="RGB Frame">
+                    <img src="./static/videos/rgb_indoor.gif" alt="RGB Frame"  class="lazy-gif" data-label="RGB Frame">
                   </div>
                 </div>
               </div>
@@ -472,6 +472,35 @@
 
 
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const lazyGifs = document.querySelectorAll('img.lazy-gif');
+
+    if ('IntersectionObserver' in window) {
+      let gifObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            const gif = entry.target;
+            gif.src = gif.dataset.src;
+            gif.classList.remove("lazy-gif");
+            gifObserver.unobserve(gif);
+          }
+        });
+      }, {
+        rootMargin: "200px" // preloads when 200px before entering viewport
+      });
+
+      lazyGifs.forEach(function (gif) {
+        gifObserver.observe(gif);
+      });
+    } else {
+      // Fallback: Load all GIFs immediately if IntersectionObserver not supported
+      lazyGifs.forEach(function (gif) {
+        gif.src = gif.dataset.src;
+      });
+    }
+  });
+</script>
 
 
 
